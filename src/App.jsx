@@ -2,14 +2,19 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-import { DealCard } from './components/DealCard/DealCard';
+
+import { GlobalStyle } from './components/GlobalStyle/GlobalStyle';
+import { DealCardsDeck } from './components/DealCardsDeck/DealCardsDeck';
 
 const rootElement = document.getElementById('App');
 
 if (rootElement) {
   render(
     <div>
-        <DealCard title="Sports Car" />
+      <GlobalStyle />
+      <DealCardsDeck
+        showing="antique_auto"
+      />
     </div>,
     rootElement
   );

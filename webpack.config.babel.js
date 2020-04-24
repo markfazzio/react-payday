@@ -74,17 +74,17 @@ module.exports = () => {
               options: {
                 name: '[path][name][hash].[ext]'
               }
-            },
-            {
-              loader: 'svgo-loader',
-              options: {
-                plugins: [
-                  {removeTitle: true},
-                  {convertColors: {shorthex: false}},
-                  {convertPathData: false}
-                ]
-              }
             }
+            // {
+            //   loader: 'svgo-loader',
+            //   options: {
+            //     plugins: [
+            //       {removeTitle: true},
+            //       {convertColors: {shorthex: false}},
+            //       {convertPathData: false}
+            //     ]
+            //   }
+            // }
           ]
         },
         {
