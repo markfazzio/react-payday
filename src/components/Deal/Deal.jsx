@@ -27,10 +27,7 @@ const DealComponent = (): React$Node => {
 
   return (
     <>
-      <DealCardsDeck showing={showing} />
-      <button onClick={setRandomDeal}>
-        Show Random Deal Card
-      </button>
+      <DealCardsDeck showing={showing} onClick={setRandomDeal} />
     </>
   );
 };

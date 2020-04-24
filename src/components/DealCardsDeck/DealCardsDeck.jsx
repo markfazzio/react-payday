@@ -27,6 +27,7 @@ const StyledDealCardsDeck = styled.div`
 const DealCardsDeckComponent = (props: DealCardsDeckPropsType): React$Node => {
 
   const {
+    onClick,
     showing
   } = props;
 
@@ -66,7 +67,7 @@ const DealCardsDeckComponent = (props: DealCardsDeckPropsType): React$Node => {
 
   return (
     <StyledDealCardsContainer>
-      <StyledDealCardsDeck>
+      <StyledDealCardsDeck onClick={onClick}>
         { renderDeals() }
       </StyledDealCardsDeck>
       { getDealToShow() }

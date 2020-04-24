@@ -14,6 +14,7 @@ export const StyledDealCard = styled.div`
   border: ${Borders.dealCard.outer};
   box-shadow: 0px 0px 4px 0px rgba(184,184,184,1);
   box-sizing: border-box;
+  cursor: pointer;
   display: flex;
   height: ${DealCardDimensions.height}px;
   padding: 20px;
