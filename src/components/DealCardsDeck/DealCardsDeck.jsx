@@ -8,8 +8,13 @@ import type { DealCardDataType, DealCardsDeckPropsType } from '../../common/prop
 
 import { Deals } from '../../data/deals';
 
-const StyledDealCardDeck = styled.div`
+const StyledDealCardsContainer = styled.div`
+  display: flex;
+`;
+
+const StyledDealCardsDeck = styled.div`
   position: relative;
+  height: ${DealCardDimensions.height + 30}px;
   width: ${DealCardDimensions.width + 30}px;
 
   ${StyledDealCard} {
@@ -17,10 +22,6 @@ const StyledDealCardDeck = styled.div`
     top: 0;
     left: 0;
   }
-`;
-
-const StyledDealCardsContainer = styled.div`
-  display: flex;
 `;
 
 const DealCardsDeckComponent = (props: DealCardsDeckPropsType): React$Node => {
@@ -65,9 +66,9 @@ const DealCardsDeckComponent = (props: DealCardsDeckPropsType): React$Node => {
 
   return (
     <StyledDealCardsContainer>
-      <StyledDealCardDeck>
+      <StyledDealCardsDeck>
         { renderDeals() }
-      </StyledDealCardDeck>
+      </StyledDealCardsDeck>
       { getDealToShow() }
     </StyledDealCardsContainer>
   );
